@@ -38,4 +38,5 @@
 - Maak hoofdletters van de tekst van de paragrafen met de klasse inspringen (Dit geldt niet voor de paragrafen binnen de div met de klasse inspringen.)
 
 ![backdrop](./README/backdrop.gif)
+
 ![Oefening CSS Les 2](./README/Oefening CSS Les 2.png)
