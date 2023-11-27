@@ -39,4 +39,4 @@
 
 ![backdrop](./README/backdrop.gif)
 
-![Oefening CSS Les 2](./README/Oefening CSS Les 2.png)
+![Oefening_CSS_Les_2.png](./README/Oefening_CSS_Les_2.png)
