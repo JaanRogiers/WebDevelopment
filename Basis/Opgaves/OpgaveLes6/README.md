@@ -13,7 +13,7 @@
 - Helemaal onderaan komt een koppeling die terug naar de hoofdtitel van het bestand gaat. 
 - Ook de hoofdtitel is een koppeling, deze gaat naar de koppeling aan de onderkant van het bestand. 
 
-![https://www.youtube.com/watch?v=kpDZo7Q4AiI](https://img.youtube.com/vi/kpDZo7Q4AiI/0.jpg)](https://www.youtube.com/watch?v=kpDZo7Q4AiI)
+[![https://www.youtube.com/watch?v=kpDZo7Q4AiI](https://img.youtube.com/vi/kpDZo7Q4AiI/0.jpg)](https://www.youtube.com/watch?v=kpDZo7Q4AiI)
 
 ## CSS
 
