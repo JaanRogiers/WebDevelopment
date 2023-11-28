@@ -1,0 +1,151 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgb(147, 162, 242);
+}
+
+input {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+
+/* Container Styles */
+#container {
+    width: 770px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Header Styles */
+header {
+    background-image: url(images/header.jpg);
+    background-color: white; /* fallback color */
+    color: white;
+    padding: 20px;
+    height: 175px;
+    width: 730px;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 0.8em;
+}
+
+/* Navigation Styles */
+nav {
+    padding: 10px 0;
+    opacity: 0;
+}
+
+nav:hover {
+    opacity: 1;
+}
+
+nav a {
+    background-color: rgb(147, 162, 243);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: rgb(101, 135, 224);
+}
+
+/* Content Styles */
+#content h2 {
+    font-size: 1.2em;
+    font-weight: lighter;
+    font-style: italic;
+    color: white;
+    background-color: rgb(147, 162, 243);
+    border: 5px outset #6974b3d8;
+    padding: 5px;
+    border-top-right-radius: 20px;
+}
+
+#content p {
+    border-bottom: 1px dotted;
+    padding: 10px 0;
+    margin: 0 5px;
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border: 5px ridge rgb(0, 0, 0);
+}
+
+th, td {
+    border: 1px solid;
+    padding: 5px;
+}
+
+th {
+    font-weight: lighter;
+    font-variant: small-caps;
+}
+
+tr:hover td {
+    background-color: grey;
+}
+
+/* Form Styles */
+fieldset, legend {
+    border: 4px double rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+legend {
+    padding: 0 10px;
+}
+
+input {
+    border: 3px solid;
+    padding: 5px;
+    border-radius: 10px/5px;
+    margin-left: 5px;
+    background-color: lightgray;
+}
+
+input[type="submit"] {
+    border-radius: 10px;
+    background-color: darkgray;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* Footer Styles */
+footer {
+    background-image: url(images/header.jpg);
+    background-position: bottom;
+    font-size: 0.6em;
+    margin-top: 10px;
+    text-align: right;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: bold;
+}
