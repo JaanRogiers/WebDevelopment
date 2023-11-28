@@ -1,0 +1,192 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgb(147, 162, 242); /* fallback */
+    background-image: linear-gradient(to bottom right, rgb(147, 162, 242) 20%, rgb(255, 183, 107) 80%); /* toegevoegd: lineair kleurenverloop van linksboven naar rechtsonder */
+}
+
+input {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+
+/* Container Styles */
+#container {
+    width: 770px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Header Styles */
+header {
+    background-color: white; /* fallback */
+    background-image: url(images/header.jpg);
+    color: white;
+    padding: 20px;
+    height: 175px;
+    width: 730px;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 0.8em;
+}
+
+/* Navigation Styles */
+nav {
+    padding: 10px 0;
+    opacity: 0;
+}
+
+nav:hover {
+    opacity: 1;
+}
+
+nav a {
+    background-color: rgb(147, 162, 243);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block; /* nodig voor de schommelanimatie */
+    opacity: 0; /* start met volledige transparantie */
+    transition: opacity 0.5s; /* overgangseffect voor de opacity */
+}
+
+nav a:first-child {
+    opacity: 1; /* eerste link altijd zichtbaar */
+}
+
+nav:hover a {
+    opacity: 1; /* maak alle links zichtbaar bij hover over nav */
+}
+
+nav a:hover {
+    animation: swing 0.5s ease; /* Schommelanimatie bij hover over een link */
+}
+
+/* Content Styles */
+#content h2 {
+    font-size: 1.2em;
+    font-weight: lighter;
+    font-style: italic;
+    color: white;
+    background-color: rgb(147, 162, 243); /* fallback */
+    background-image: radial-gradient(circle at 40% 40%, rgb(255, 183, 107), rgb(147, 162, 243)); /* cirkelvormig kleurenverloop, middelpunt niet in het midden */
+    border: 5px outset #6974b3d8;
+    padding: 5px;
+    border-top-right-radius: 20px;
+    transition: transform 0.5s ease, background-image 0.5s ease; /* overgang voor schalen en kleurenverloop */
+}
+
+#content h2:hover {
+    transform: scale(1.1); /* vergroot de titel bij hover */
+}
+
+#content p {
+    border-bottom: 1px dotted;
+    padding: 10px 0;
+    margin: 0 5px;
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse; /* zorgt voor enkelvoudige lijnen tussen cellen */
+}
+
+th, td {
+    border: 1px solid;
+    padding: 5px;
+    transition: background-color 0.5s ease; /* overgang voor achtergrondkleur */
+}
+
+th {
+    font-weight: lighter;
+    font-variant: small-caps;
+}
+
+tr:hover td {
+    background-color: grey; /* achtergrondkleur verandert geleidelijk */
+}
+
+/* Form Styles */
+fieldset, legend {
+    border: 4px double rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+legend {
+    padding: 0 10px;
+}
+
+input {
+    border: 3px solid;
+    padding: 5px;
+    border-radius: 10px / 5px;
+    margin-left: 5px;
+    background-color: lightgray;
+    transition: background-color 0.3s ease; /* overgang voor de achtergrondkleur */
+}
+
+input[type="submit"] {
+    border-radius: 10px;
+    background-color: darkgray;
+    font-weight: bold;
+    text-transform: capitalize;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6); /* schaduw links onderaan */
+    transition: transform 0.1s ease, box-shadow 0.1s ease; /* overgang voor beweging en schaduw */
+}
+
+input[type="submit"]:active {
+    transform: translate(2px, 2px); /* beweegt de knop naar links onder bij klikken */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* maakt de schaduw kleiner */
+}
+
+input:hover {
+    background-image: linear-gradient(to right, grey, darkgrey); /* donkerdere achtergrond met kleurverloop bij hover */
+}
+
+input:focus {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.6); /* schaduw aan de binnenkant */
+}
+
+/* Footer Styles */
+footer {
+    background-image: url(images/header.jpg);
+    background-position: bottom;
+    font-size: 0.6em;
+    margin-top: 10px;
+    text-align: right;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Schommelanimatie */
+@keyframes swing {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+}
